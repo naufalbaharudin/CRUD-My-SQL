@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/jdl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/in_nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan NIM"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        android:layout_below="@id/jdl"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <EditText
+        android:id="@+id/in_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        android:layout_below="@id/in_nim"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <EditText
+        android:id="@+id/in_angkatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Angkatan"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        android:layout_below="@id/in_nama"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_angkatan"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="Simpan"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_hapus"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:text="Hapus"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
